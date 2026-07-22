@@ -1,0 +1,14 @@
+services:
+  mysql:
+    container_name: ${MYSQL_NAME}
+    image: mysql:8.0
+    restart: always
+    env_file:
+      - .env
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: ecommerce
+      MYSQL_USER: nicolas
+      MYSQL_PASSWORD: demolidor1776
+    ports:
+      - "3310:3306"

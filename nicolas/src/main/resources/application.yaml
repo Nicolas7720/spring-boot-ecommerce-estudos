@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3310/ecommerce
+    username: nicolas
+    password: demolidor1776
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+  flyway:
+    enabled: false
